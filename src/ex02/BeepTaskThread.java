@@ -8,7 +8,7 @@ class ShowTask implements Runnable {
 
 	@Override
 	public void run() {
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < 3; i++) {
 			System.out.println("탕");
 			try {
 				//0.5초 쉬어감
@@ -29,7 +29,7 @@ class BeepTask implements Runnable {
 	public void run() {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < 3; i++) {
 			toolkit.beep();
 			System.out.println("삑");
 			try {
